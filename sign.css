@@ -1,0 +1,151 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f6f1; /* Light wood color */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px; /* Center the logo and add some space below it */
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.login-container {
+    width: 40%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff5e8; /* Light cream color */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    align-items: center; /* Center contents horizontally */
+}
+
+h1 {
+    color: #6c5b7b; /* Deep purple */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%; /* Ensures full width */
+}
+
+.input-group .icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #6c5b7b; /* Focus color deep purple */
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #6c5b7b; /* Deep purple */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #563d62; /* Slightly darker purple */
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Social login styles */
+.social-login {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-login p {
+    color: #333; /* Darker color for contrast */
+    margin-bottom: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .login-container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
